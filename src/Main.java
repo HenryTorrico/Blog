@@ -57,6 +57,9 @@ public class Main {
         }
         blog.anadirArticulo(articulo1);
         blog.anadirArticulo(articulo2);
+        articulo1.rate(usuario1,3);
+        articulo1.rate(usuario2,2);
+        articulo1.rate(usuario3,5);
         blog.mostrarArticulos();
 
 

@@ -8,8 +8,10 @@ public class Articulo {
     private String texto;
     private int likes;
     private Usuario autor;
+    private float rate=0;
     private List<Comentario> comentarios;
     private List<Usuario> ListaUsuarios=new LinkedList<Usuario>();
+    private List<Float> Ratings=new LinkedList<Float>();
 
 
     public Articulo(){
@@ -21,6 +23,10 @@ public class Articulo {
         this.likes = 0;
         this.texto = texto;
         comentarios=new ArrayList<Comentario>();
+    }
+    public void rate(Usuario user,float rate)
+    {
+        Ratings.add(rate);
     }
     public void mostrar()
     {
@@ -38,6 +44,16 @@ public class Articulo {
         {
             comentario.mostrar();
         }
+        float aux=0;
+        if(Ratings.size()!=0) {
+            for (int i = 0; i < Ratings.size(); i++) {
+                aux = aux + Ratings.get(i);
+            }
+            aux = aux / Ratings.size();
+            System.out.println("El rating de este articulo es: " + aux);
+        }
+        else
+            System.out.println("El articulo no tiene ninguna calificacion");
     }
 
     public int numeroComentarios(){
