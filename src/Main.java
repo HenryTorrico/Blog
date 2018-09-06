@@ -19,8 +19,7 @@ public class Main {
         Comentario com2 = new Comentario("soy el segundo COMENTARIO 2", usuario2);
         com2.like(usuario3);
 
-        Comentario com3 = new Comentario("soy el tercer COMENTARIO 3" +
-                "", usuario3);
+        Comentario com3 = new Comentario("soy el tercer COMENTARIO 3", usuario3);
         com3.like(usuario1);
         com3.like(usuario2);
 
