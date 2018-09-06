@@ -3,7 +3,7 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        Blog blog = new Blog("www.goguel.com", "goguel");
+        Blog blog = new Blog("www.google.com", "google");
 
         Usuario usuario1 = new Usuario("Juanito1", "Perez1");
         Usuario usuario2 = new Usuario("Juanito2", "Perez2");
